@@ -1,0 +1,144 @@
+{
+  "organizations": [
+    {
+      "id": "org-1",
+      "name": "Apex Tech Solutions",
+      "gstin": "07AAAAA1111A1Z1",
+      "createdAt": "2026-07-20T12:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-employee",
+      "name": "Rahul Verma",
+      "email": "rahul@apextech.com",
+      "role": "employee",
+      "organizationId": "org-1",
+      "createdAt": "2026-07-20T12:00:00.000Z"
+    },
+    {
+      "id": "user-manager",
+      "name": "Anjali Sharma",
+      "email": "anjali@apextech.com",
+      "role": "manager",
+      "organizationId": "org-1",
+      "createdAt": "2026-07-20T12:00:00.000Z"
+    },
+    {
+      "id": "user-admin",
+      "name": "Tejpratap Singh",
+      "email": "tej@apextech.com",
+      "role": "admin",
+      "organizationId": "org-1",
+      "createdAt": "2026-07-20T12:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "Delhi Client Pitch",
+      "budget": "50000.00",
+      "spent": "18400.00",
+      "organizationId": "org-1",
+      "createdAt": "2026-07-20T12:00:00.000Z"
+    },
+    {
+      "id": "proj-2",
+      "name": "Office Renovation",
+      "budget": "200000.00",
+      "spent": "45000.00",
+      "organizationId": "org-1",
+      "createdAt": "2026-07-20T12:00:00.000Z"
+    },
+    {
+      "id": "proj-3",
+      "name": "Marketing Campaign",
+      "budget": "150000.00",
+      "spent": "0.00",
+      "organizationId": "org-1",
+      "createdAt": "2026-07-20T12:00:00.000Z"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-1",
+      "userId": "user-employee",
+      "projectId": "proj-1",
+      "merchantName": "Uber India",
+      "date": "2026-07-18",
+      "amount": "650.00",
+      "category": "Travel",
+      "gstRate": "5.00",
+      "cgst": "15.48",
+      "sgst": "15.48",
+      "igst": "0.00",
+      "merchantGstin": "27AABCU1839C1Z0",
+      "receiptUrl": "https://placehold.co/600x400/png?text=Uber+Receipt",
+      "status": "approved",
+      "notes": "Client meeting travel - Delhi Connaught Place",
+      "reviewerId": "user-manager",
+      "rejectionReason": null,
+      "createdAt": "2026-07-18T14:30:00.000Z"
+    },
+    {
+      "id": "exp-2",
+      "userId": "user-employee",
+      "projectId": "proj-1",
+      "merchantName": "Amazon Web Services",
+      "date": "2026-07-15",
+      "amount": "17750.00",
+      "category": "Software/SaaS",
+      "gstRate": "18.00",
+      "cgst": "0.00",
+      "sgst": "0.00",
+      "igst": "2707.63",
+      "merchantGstin": "9917USA29003OSG",
+      "receiptUrl": "https://placehold.co/600x400/png?text=AWS+Invoice",
+      "status": "approved",
+      "notes": "Cloud server hosting monthly subscription",
+      "reviewerId": "user-manager",
+      "rejectionReason": null,
+      "createdAt": "2026-07-15T09:15:00.000Z"
+    },
+    {
+      "id": "exp-3",
+      "userId": "user-employee",
+      "projectId": "proj-2",
+      "merchantName": "IKEA India",
+      "date": "2026-07-19",
+      "amount": "45000.00",
+      "category": "Supplies",
+      "gstRate": "18.00",
+      "cgst": "3432.20",
+      "sgst": "3432.20",
+      "igst": "0.00",
+      "merchantGstin": "07AAAIC4930A1Z5",
+      "receiptUrl": "https://placehold.co/600x400/png?text=IKEA+Furniture",
+      "status": "approved",
+      "notes": "Office chairs and workstation furniture",
+      "reviewerId": "user-manager",
+      "rejectionReason": null,
+      "createdAt": "2026-07-19T11:20:00.000Z"
+    },
+    {
+      "id": "exp-4",
+      "userId": "user-employee",
+      "projectId": "proj-1",
+      "merchantName": "Haldiram's Delhi",
+      "date": "2026-07-20",
+      "amount": "1250.00",
+      "category": "Food/Beverages",
+      "gstRate": "5.00",
+      "cgst": "29.76",
+      "sgst": "29.76",
+      "igst": "0.00",
+      "merchantGstin": "07AAACH4210D1Z6",
+      "receiptUrl": "https://placehold.co/600x400/png?text=Haldirams+Meal",
+      "status": "pending",
+      "notes": "Team working lunch during project kickoff",
+      "reviewerId": null,
+      "rejectionReason": null,
+      "createdAt": "2026-07-20T13:45:00.000Z"
+    }
+  ]
+}
